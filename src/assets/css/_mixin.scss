@@ -1,0 +1,19 @@
+$vm_base: 1920;
+$vmh_base: 1080;
+@function vm($px) {
+  @return ($px / $vm_base) * 100vw;
+}
+
+@function vmh($px) {
+  @return ($px / $vmh_base) * 100vh;
+}
+
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin fs($fontSize, $color) {
+  font-size: $fontSize;
+  color: $color;
+}
